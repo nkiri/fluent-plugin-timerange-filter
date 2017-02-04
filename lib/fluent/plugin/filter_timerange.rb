@@ -26,7 +26,7 @@ class Fluent::Plugin::TimerangeFilter < Fluent::Plugin::Filter
     new_es = Fluent::MultiEventStream.new
     es.each { |time, record|
       @now = Time.parse('1970-01-01 ' << Time.at(time).strftime('%R'))
-      if @now > @starttime and @now < @endtime
+      if @now >= @starttime and @now < @endtime
         new_es.add(time, filter(tag, time, record))
       end
     }
