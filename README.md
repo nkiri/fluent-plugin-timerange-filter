@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/nkiri/fluent-plugin-timerange-filter.svg?branch=master)](https://travis-ci.org/nkiri/fluent-plugin-timerange-filter)
 # Fluent::Plugin::Timerange::Filter
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/fluent/plugin/timerange/filter`. To experiment with that code, run `bin/console` for an interactive prompt.
