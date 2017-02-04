@@ -19,12 +19,7 @@ class Fluent::Plugin::TimerangeFilter < Fluent::Plugin::Filter
   end
 
   def filter(tag, time, record)
-    @now = Time.parse('1970-01-01 ' << Time.at(time).strftime('%R'))
-    if @now > @starttime and @now < @endtime
-      return record
-    else
-      return nil
-    end
+    record
   end
 
   def filter_stream(tag, es)
